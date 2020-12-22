@@ -1,6 +1,7 @@
 '''
 Author : Dhruv B Kakadiya
 '''
+
 # cook your dish here
 for _ in range(int(input())):
     rounds = int(input())
