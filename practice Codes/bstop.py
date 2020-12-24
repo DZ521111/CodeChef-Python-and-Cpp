@@ -2,6 +2,7 @@
 Author : Dhruv B Kakadiya
 
 '''
+
 class Node:
     def __init__(elf, data, pos):
         elf.key = data
