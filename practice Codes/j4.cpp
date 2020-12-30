@@ -37,8 +37,8 @@ int main()
   ctr[i].first=0;
  }
 
- sort(v.begin(),v.begin()+n, compp);
- for(i=0;i<n;i++)
+ sort(v.begin(), v.begin() + n, compp);
+ for(i = 0 ; i < n ; i++)
  {
    r[i].second=v[i].second;
    ctr[i].second=v[i].second;
