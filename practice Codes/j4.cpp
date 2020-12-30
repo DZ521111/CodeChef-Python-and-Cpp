@@ -5,22 +5,23 @@
 #include<cmath>
 #include<cstdio>
 #include<algorithm>
+
 using namespace std;
 #define INT_MAX 2147483647
-#define DIST(x,y,x1,y1) (((x-x1)*(x-x1))+((y-y1)*(y-y1)))
+#define DIST(x,y,x1,y1) (((x - x1) * (x - x1)) + ((y - y1) * (y - y1)))
 bool comp(pair<int, int> p1, pair<int, int> p2)
 {
-    return p1.second<p2.second;
+    return p1.second < p2.second;
 }
 bool compp(pair<pair<int, int>, int > p1, pair<pair<int, int>, int > p2)
 {
-    if(p1.first.first!=p2.first.first)
-    return p1.first.first<p2.first.first;
-    return p1.first.second<p2.first.second;
+    if(p1.first.first != p2.first.first)
+    return p1.first.first < p2.first.first;
+    return p1.first.second < p2.first.second;
 }
 int main()
 {
- int i,j,n,t,d,d1;
+ int i, j, n, t, d, d1;
  scanf("%d",&t);
  vector<pair<pair<int, int>, int> >v(30000);
  vector<pair<int, int> > r(30000);
