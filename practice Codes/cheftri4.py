@@ -3,14 +3,17 @@ Author : Dhruv B Kakadiya
 
 '''
 
+# import libraries
 import sys
 import math
 import copy
 
 class YesException(BaseException) :
+    # no content
     pass
 
 class NoException(BaseException):
+    # no content
     pass
 
 def getInput(num) :
