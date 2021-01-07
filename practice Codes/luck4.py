@@ -1,3 +1,9 @@
+'''
+Author : Dhruv B Kakadiya
+
+'''
+
+
 result = []
 for _ in range(int(input())):
     num = int(input())
