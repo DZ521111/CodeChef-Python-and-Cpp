@@ -1,3 +1,8 @@
+'''
+Author : Dhruv B Kakadiya
+
+'''
+
 from collections import defaultdict as dd,deque
 t=int(input())
 while t:
