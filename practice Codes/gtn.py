@@ -1,3 +1,8 @@
+'''
+Author : Dhruv B Kakadiya
+
+'''
+
 import sys
 range = xrange
 def input(x = 1, store = []):
