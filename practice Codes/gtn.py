@@ -13,8 +13,8 @@ def input(x = 1, store = []):
     else:
         return [store.pop(0) for _ in range(x)]
 
-for _ in range(t):
-    n,y = int(input()), int(input())
+for _ in range(int(input())):
+    n, y = int(input()), int(input())
     n = 10**6
 
     a = -1
@@ -23,32 +23,28 @@ for _ in range(t):
     aval = -1
     bval = 0
 
-    # ind = a * 2 + 1
-    
-    while a + 1 < b:
+    while (a + 1 < b):
         c = a + b >> 1
-
         ind = 2 * c + 1
-        print 1, 2 * c + 1
+        print (1, 2 * c + 1)
         sys.stdout.flush()
-
         x = int(input())
-        if x == 0:
+        if (x == 0):
             bval = 0
             b = c
-        elif x == y:
+        elif (x == y):
             a = c
             aval = x
             break
-        elif x > y:
+        elif (x > y):
             b = c
             bval = x
         else:
             a = c
             aval = x
 
-    if a == -1:  
-        print 2, -1
+    if (a == -1):
+        print (2, -1)
         sys.stdout.flush()
         s = input()
         assert(s == 'YES')
