@@ -50,8 +50,8 @@ for _ in range(int(input())):
         assert(s == 'YES')
         continue
 
-    if aval == y:
-        print 2, 2 * a + 1
+    if (aval == y):
+        print (2, 2 * a + 1)
         sys.stdout.flush()
         s = input()
         assert(s == 'YES')
@@ -61,33 +61,30 @@ for _ in range(int(input())):
     ind = 2*a + 2
 
     pow2 = 2
-    while ind % (2 * pow2) == 0:
+    while (ind % (2 * pow2) == 0):
         pow2 *= 2
-    
 
-    print 1, ind
+    print (1, ind)
     sys.stdout.flush()
     val = int(input())
-    
-    if val == 0:  
-        print 2, -1
+
+    if (val == 0):
+        print (2, -1)
         sys.stdout.flush()
         input()
         continue
-    
-    while pow2 != 2:
+
+    while (pow2 != 2):
         pow2 //= 2
-        if ind + pow2 <=n:
-            print 1, ind + pow2
+        if (ind + pow2 <=n):
+            print (1, ind + pow2)
             sys.stdout.flush()
             val -= int(input())
-    
     val -= bval
-
-    if val == y:
-        print 2,ind
+    if (val == y):
+        print (2, ind)
     else:
-        print 2, -1
+        print (2, -1)
     sys.stdout.flush()
     s = input()
     assert(s == 'YES')
