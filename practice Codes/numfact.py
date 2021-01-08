@@ -1,8 +1,13 @@
+'''
+Author : Dhruv B Kakadiya
+
+'''
+
+
 import atexit
 import io
 import sys
 import math
-from collections import defaultdict,Counter
 
 _INPUT_LINES = sys.stdin.read().splitlines()
 input = iter(_INPUT_LINES).__next__
@@ -13,7 +18,7 @@ sys.stdout = _OUTPUT_BUFFER
 def write():
     sys.__stdout__.write(_OUTPUT_BUFFER.getvalue())
 def factor(n):
-    s=d.setdefault(2,0)
+    s = d.setdefault(2,0)
     while n%2==0:
         d[2]+=1
         n//=2
