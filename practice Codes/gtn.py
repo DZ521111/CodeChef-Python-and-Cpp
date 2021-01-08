@@ -4,17 +4,15 @@ Author : Dhruv B Kakadiya
 '''
 
 import sys
-range = xrange
+
 def input(x = 1, store = []):
     while len(store) < x:
-        store += raw_input().split()
+        store += input().split()
     if x == 1:
         return store.pop(0)
     else:
         return [store.pop(0) for _ in range(x)]
 
-
-t = int(input())
 for _ in range(t):
     n,y = int(input()), int(input())
     n = 10**6
