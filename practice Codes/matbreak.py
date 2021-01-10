@@ -1,3 +1,8 @@
+'''
+Author : Dhruv B Kakadiya
+
+'''
+
 MOD=10 ** 9 + 7
 def powerLL(x, n):
     result = 1;
