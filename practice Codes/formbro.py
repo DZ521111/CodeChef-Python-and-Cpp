@@ -1,3 +1,8 @@
+'''
+Author : Dhruv B Kakadiya
+
+'''
+
 for _ in range(int(input())):
     n, mod, q = map(int, input().split())
     ls = [0] * n
