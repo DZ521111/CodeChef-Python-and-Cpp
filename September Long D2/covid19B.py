@@ -1,3 +1,8 @@
+'''
+Author : Dhruv B Kakadiya
+
+'''
+
 for _ in range(int(input())):
     n = int(input())
     num = list(map(int, input().split()))
