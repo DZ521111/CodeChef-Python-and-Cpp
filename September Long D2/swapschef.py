@@ -1,3 +1,8 @@
+'''
+Author : Dhruv B Kakadiya
+
+'''
+
 import math as m
 def find_index(sum_):
     index_ = (m.sqrt((sum_ * 4) + 1) - 1) // 2
