@@ -4,7 +4,7 @@ Created on Wed Sep  9 10:16:51 2020
 
 @author: DHRUV
 """
-
+import numpy as np
 import math as m
 
 k = int(input())
