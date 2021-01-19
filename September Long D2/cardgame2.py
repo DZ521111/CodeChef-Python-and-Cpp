@@ -20,7 +20,7 @@ def temporary(n, k):
         ans = ((ans % mod) * (n - i) % mod) % mod
         ans = find_div(ans, i + 1)
     return (ans % mod)
-    
+
 for _ in range(int(input())):
     n = int(input())
     num = list(map(int, input().split()))
