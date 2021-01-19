@@ -1,7 +1,6 @@
 """
-Created on Thu Sep 10 18:44:28 2020
+Author : Dhruv B Kakadiya
 
-@author: DHRUV
 """
 
 def find_xor(n):
@@ -16,7 +15,7 @@ def find_xor(n):
         if (lst[i] >= sum_):
             lst[i] = ((n - (lst[i] - sum_) / (2 ** (len(lst) - i))) / 2)
         else:
-            lst[i] = (n + (sum_ - lst[i])/(2 ** (len(lst) - i))) / 2
+            lst[i] = (n + (sum_ - lst[i]) / (2 ** (len(lst) - i))) / 2
     for i in range(1, len(lst)):
         if (lst[i] % 2 != 0):
             ans += 2 ** (len(lst) - i)
