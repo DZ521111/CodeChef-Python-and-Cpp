@@ -1,3 +1,7 @@
+'''
+Author : Dhruv B Kakadiya
+
+'''
 # cook your dish here
 mod = 1000000007
 def find_power(a, n):
